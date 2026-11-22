@@ -1,0 +1,240 @@
+/* ========== Responsive Base ========== */
+html {
+    overflow-x: visible !important;
+    max-width: 100%;
+}
+body {
+    overflow-x: clip !important;
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+}
+
+/* ========== Desktop Services Spacing (>= 992px) ========== */
+@media (min-width: 992px) {
+    #service .tab-pane > div {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 48px !important;
+    }
+    .left-buying {
+        flex: 0 1 540px;
+        max-width: 540px;
+        min-width: 0;
+    }
+    .right-buying {
+        flex: 0 1 520px;
+        max-width: 520px;
+        display: flex;
+        justify-content: center;
+    }
+    .img-buying {
+        width: 100%;
+        max-width: 520px;
+        height: 380px;
+    }
+}
+
+/* ========== Tablet & Below (< 992px) ========== */
+@media (max-width: 991.98px) {
+    /* Navbar & Mega Menu */
+    #my-nav {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+    #my-nav .navbar-nav {
+        gap: 0 !important;
+        padding: 8px 0;
+    }
+    #my-nav .mega-menu {
+        position: static !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-height: 60vh;
+        overflow-y: auto;
+        transform: none !important;
+        border: 0;
+        box-shadow: none;
+    }
+    .left-img-Featured {
+        flex-shrink: 0;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding-top: 90px !important;
+        padding-bottom: 24px;
+    }
+    .hero-section h1 {
+        font-size: clamp(2rem, 7vw, 3rem);
+    }
+    .hero-subtitle {
+        max-width: 100% !important;
+        font-size: 1rem !important;
+        padding: 0 8px;
+    }
+    .search-form {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: auto;
+        padding: 16px !important;
+    }
+    .stats-container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Section Headers */
+    .sp-2-header {
+        font-size: clamp(1.6rem, 6vw, 2.2rem) !important;
+    }
+    .sp-3-header {
+        font-size: 1rem !important;
+    }
+
+    /* Services Tabs */
+    #service .container {
+        width: 100% !important;
+    }
+    #service .tab-pane > div {
+        gap: 24px !important;
+    }
+    .left-buying,
+    .right-buying {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+    }
+    .img-buying {
+        width: 100% !important;
+        max-width: 520px;
+        height: auto !important;
+        min-height: 240px;
+        margin: 0 auto;
+    }
+    .img-buying img {
+        height: auto !important;
+    }
+    .Success-Rate {
+        left: auto !important;
+        right: 12px !important;
+        bottom: 12px !important;
+        width: auto !important;
+        min-width: 140px;
+        min-height: auto !important;
+        padding: 10px 14px !important;
+    }
+    .my-taps {
+        flex-wrap: wrap !important;
+    }
+    .my-taps .nav-link {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    .div-card-ser p {
+        max-width: 100%;
+    }
+
+    /* Testimonials Carousel */
+    .carousel {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 300px;
+    }
+    #carouselExampleIndicators {
+        padding: 8px !important;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
+    .definition-person {
+        flex-wrap: wrap;
+    }
+}
+
+/* ========== Mobile (< 768px) ========== */
+@media (max-width: 767.98px) {
+    /* Property Cards */
+    .card .card-img-top {
+        height: auto;
+    }
+    .img-top {
+        height: 220px !important;
+        object-fit: cover;
+    }
+    .header-card-body {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    .bottom-card {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .num-photos,
+    .condition {
+        font-size: 0.8rem;
+    }
+
+    /* Services */
+    .buying h3,
+    .selling h3,
+    .investing h3,
+    .commercial h3 {
+        margin-top: 1rem !important;
+        font-size: 1.4rem;
+    }
+    .left-buying p.fs-5 {
+        font-size: 1rem !important;
+    }
+    .left-buying > button {
+        width: 100%;
+    }
+
+    /* Contact */
+    .contact-form-card {
+        padding: 20px !important;
+    }
+    .info-panel,
+    .connect-panel {
+        padding: 20px !important;
+    }
+    .connect-panel .d-flex {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    /* Footer */
+    .footer-top {
+        text-align: center;
+    }
+}
+
+/* ========== Small Phones (< 576px) ========== */
+@media (max-width: 575.98px) {
+    .hero-section h1 {
+        font-size: 1.9rem;
+    }
+    .header-section .sp-1-header::before,
+    .header-section .sp-1-header::after {
+        width: 30px;
+    }
+    .sp-1-header {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        font-size: 0.85rem;
+    }
+    .fs-2 {
+        font-size: 1.5rem !important;
+    }
+    .stats-container .fs-3 {
+        font-size: 1.3rem !important;
+    }
+    .accordion-button {
+        font-size: 0.95rem;
+    }
+}
